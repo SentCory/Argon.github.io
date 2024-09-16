@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>FartLery - 个人博客</title>
+</head>
+<body>
+    <div class="loader" id="loader"></div>
+    
+    <div class="container" id="content" style="display: none;">
+        <header>
+            <h1>欢迎来到 FartLery</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">关于我</a></li>
+                    <li><a href="#blog">博客文章</a></li>
+                    <li><a href="#contact">联系我</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="about">
+            <h2>关于我</h2>
+            <p>你好！我是一个热爱分享的博主，欢迎你在这里探索我的世界。</p>
+        </section>
+
+        <section id="blog">
+            <h2>博客文章</h2>
+            <p>这里将展示我的最新文章。</p>
+            <!-- 可以添加更多文章或链接 -->
+        </section>
+
+        <section id="contact">
+            <h2>联系我</h2>
+            <p>如果你有任何问题或想要交流，欢迎联系我。</p>
+        </section>
+        
+        <footer>
+            <p>&copy; 2023 FartLery. 保留所有权利。</p>
+        </footer>
+    </div>
+
+    <script>
+        // 加载动画
+        window.onload = function() {
+            const loader = document.getElementById('loader');
+            const content = document.getElementById('content');
+            loader.style.display = 'none';
+            content.style.display = 'block';
+        };
+    </script>
+</body>
+</html>
